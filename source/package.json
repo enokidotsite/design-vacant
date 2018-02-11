@@ -1,6 +1,6 @@
 {
-  "name": "enoki-vacant",
-  "version": "1.0.0",
+  "name": "enoki-design-vacant",
+  "version": "0.1.0",
   "description": "A simple place to start",
   "main": "index.js",
   "scripts": {

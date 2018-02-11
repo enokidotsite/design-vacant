@@ -2,3 +2,4 @@
 node_modules
 bundles/bundle.js
 bundles/bundle.css
+dat.json
