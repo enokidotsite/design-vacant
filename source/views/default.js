@@ -5,17 +5,17 @@ var html = require('choo/html')
 module.exports = view
 
 function view (state, emit) {
-  var page = state.content[state.href || '/']
+  var page = state.page
 
   // loading
   if (!state.site.loaded) return renderLoading(state, emit)
   // 404
-  if (!page) return renderNotFound(state, emit)
+  if (!page().v('url')) return renderNotFound(state, emit)
 
   // local data
-  var pages = getPages(page, state.content)
-  var fields = getFields(page)
-  var files = objectValues(page.files)
+  var pages = page().pages().toArray()
+  var fields = getFields(page().v())
+  var files = page().files().toArray()
 
   // template
   return html`
