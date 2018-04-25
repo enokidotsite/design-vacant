@@ -10,7 +10,8 @@
   },
   "keywords": [],
   "author": "Jon-Kyle <contact@jon-kyle.com> (http://jon-kyle.com)",
-  "license": "Apache 2.0",
+  "repository": "https://github.com/enokidotsite/design-vacant.git",
+  "license": "Apache-2.0",
   "dependencies": {
     "choo": "^6.0.0",
     "enoki": "^2.1.0",
