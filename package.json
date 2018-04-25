@@ -2,7 +2,7 @@
   "name": "enoki-design-vacant",
   "version": "0.1.0",
   "description": "A simple place to start",
-  "main": "source/index.js",
+  "main": "index.js",
   "scripts": {
     "start": "enoki content -w & watchify source/index.js -o bundles/bundle.js -t sheetify -p [ css-extract -o bundles/bundle.css ] source/index.js",
     "dev": "enoki content --watch & budo source/index.js --dir -s bundles/bundle.js -P -- -t sheetify -p [ css-extract -o bundles/bundle.css ]",
@@ -10,11 +10,10 @@
   },
   "keywords": [],
   "author": "Jon-Kyle <contact@jon-kyle.com> (http://jon-kyle.com)",
-  "repository": "https://github.com/enokidotsite/design-vacant.git",
-  "license": "Apache-2.0",
+  "license": "Apache 2.0",
   "dependencies": {
     "choo": "^6.0.0",
-    "enoki": "^2.0.0",
+    "enoki": "^2.1.0",
     "nanocomponent": "^6.4.0",
     "nanoreset": "^1.2.0",
     "object-keys": "^1.0.11",
