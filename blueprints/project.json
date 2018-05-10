@@ -1,0 +1,35 @@
+{
+  "title": "Project",
+  "files": false,,
+  "pages": {
+    "view": "entry"
+  },
+  "layout": {
+    "nav": {
+      "width": "1/2",
+      "fields": ["pages"]
+    },
+    "content": {
+      "width": "1/2",
+      "fields": [
+        "title",
+        "text",
+        "tags"
+      ]
+    }
+  },
+  "fields": {
+    "title": {
+      "label": "Title",
+      "type": "text"
+    },
+    "text": {
+      "label": "Description",
+      "type": "textarea"
+    },
+    "tags": {
+      "label": "Tags",
+      "type": "tags"
+    }
+  }
+}
